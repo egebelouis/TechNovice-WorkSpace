@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Style1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Data</title>
+</head>
+<body>
+    <div class="display1">
+    <h1>Submitted Information</h1>
+    <p><strong>First Name:</strong> <span id="displayFname"></span></p><br>
+    <p><strong>Last Name:</strong> <span id="displayName"></span></p><br>
+    <p><strong>Email:</strong> <span id="displayEmail"></span></p><br>
+    <p><strong>Phone Number:</strong> <span id="displayPhone"></span></p><br>
+
+    <script>
+        document.getElementById("displayFname").textContent=localStorage.getItem("fname");
+        document.getElementById("displayName").textContent=localStorage.getItem("name");
+        document.getElementById("displayEmail").textContent=localStorage.getItem("email");
+        document.getElementById("displayPhone").textContent=localStorage.getItem("phone");
+    </script>
+    </div>
+</body>
+</html>

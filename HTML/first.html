@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter name" required><br>
+    </form>
+    <p id="name1">my name is:</p><br>
+    <button type="button" id="showname">show my name</button>
+    <script>
+        let inputName = document.getElementById("name");
+        let button = document.getElementById("showname");
+        let output = document.getElementById("name1");
+
+        button.addEventListener("click", function () {
+            output.textContent = "My name is " + inputName.value;
+        });
+    </script>
+</body>
+</html>
